@@ -1,0 +1,8 @@
+---
+title: "R Vectors Notes"
+output: html_document
+---
+
+# VECTORS
+
+-Is a 1-D collection of elements that are of the same type.

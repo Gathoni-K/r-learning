@@ -1,0 +1,46 @@
+---
+title: "R Fundamentals Notes"
+output: html_document
+---
+
+
+# R FUNDAMENTALS
+
+## Basic Data Types.
+
+1. numeric
+2. integer (1L, where the letter 'L' declares it an integer)
+3. complex (9+3i, where 'i' is the imaginary part)
+4. character (string)
+5. logical (boolean) - (TRUE or FALSE)
+
+-The class() function is used to check the data type of a variable
+
+    x <- 10.5
+    class(x)
+    <!-- prints numeric -->
+
+
+## Type Conversion.
+
+-Convert from one type to another using:
+
+    as.numeric()
+    as.integer()
+    as.complex()
+
+
+## R Math
+
+### Built-in Math Functions
+
+    min(5, 10, 15)
+    max(10, 29, 87)
+
+    sqrt(16)
+    <!-- finds the square root -->
+
+    abs(-4.7)
+
+    ceiling(1.4)
+    floor(1.4)
