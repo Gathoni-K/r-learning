@@ -6,3 +6,53 @@ output: html_document
 # VECTORS
 
 -Is a 1-D collection of elements that are of the same type.
+
+
+-Are created using the 'c()' concatenation.
+
+    numbers <- c(23, 45, 89)
+
+-Creating a vector with a numerical values in a sequence:
+
+    numbers <- 1:10
+    <!-- output is the numbers from 1-10 -->
+
+-To find the length of a vector we use 'length()'
+
+    fruits <- c("banana", "apple", "orange")
+
+-To sort items in a vector alphabetically or numerically use: 'sort()'
+
+    grades <- c("A", "B", "F", "E", "C", "D")
+    <!-- sort the items alphabetically -->
+
+-To access items in a vector, refer to its index number inside []. The first item having index 1 and so on.
+
+    names <- c("Jack", "Jill", "Jane", "John")
+
+    names[2]
+    <!-- access the second item, Jill -->
+
+    names[c(2, 3)]
+    <!-- access multiple elements by referring to different index positions using the 'c()' function -->
+
+    names[c(-1)]
+    <!-- access all the items apart from the first one -->
+
+    names[4] <- "James"
+    <!-- change the value of a specific item -->
+
+## Logical Indexing 101.
+
+-Imagine there are a row of lockers, and each locker has a number inside.
+
+-There is a list with 'Open' or 'Closed' for each locker.
+
+-Logical indexing is 'Give me the numbers from only the lockers saying "Open" '
+
+-In R: the data vector, is the row of lockers, TRUE/FALSE list being our signs and the '[]' being the action of opening the selected lockers.
+
+-Syntax:
+
+    data[condition]
+    <!-- condition is something giving TRUE or FALSE for every element -->
